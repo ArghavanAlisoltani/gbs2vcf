@@ -10,6 +10,6 @@ location and prints status messages.
 Run it as:
 
 ```bash
-./convert_gbs_to_vcf.sh input.vcf output.vcf
+./convert_gbs_to_vcf.sh input.fastq.gz output.vcf
 ```
 
