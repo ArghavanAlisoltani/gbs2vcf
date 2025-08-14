@@ -1,15 +1,12 @@
 # gbs2vcf
-End-to-end GBS variant-calling for plants: QC → trimming → alignment → joint genotyping → filtered VCFs. 
+End-to-end GBS variant-calling for plants: QC → trimming → alignment → joint genotyping → filtered VCFs.
 
 ## Usage
 
-The repository includes a placeholder script, `convert_gbs_to_vcf.sh`, which demonstrates the
-expected interface for a future implementation. It copies the input file to the output
-location and prints status messages.
-
-Run it as:
+The repository provides `convert_gbs_2_vcf.sh`, a bash pipeline that runs quality assessment, demultiplexing, trimming, alignment, joint genotyping and variant filtering. Edit the `REF`, `SAMPLE_LIST`, and `BARCODES` variables at the top of the script to match your data, then execute:
 
 ```bash
-./convert_gbs_to_vcf.sh input.fastq.gz output.vcf
+./convert_gbs_2_vcf.sh
 ```
 
+The final filtered VCF is written to `vcf/filtered_variants.vcf.gz`.
