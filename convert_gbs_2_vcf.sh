@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-THREADS=16                                 # total threads available
+THREADS=32                                 # total threads available
 REF="path/to/pine_reference.fasta"         # reference genome
 SAMPLE_LIST="samples.txt"                  # one sample name per line
 BARCODES="barcodes.txt"                    # barcode definitions for demultiplexing
